@@ -1,0 +1,8 @@
+output "workspace" {
+  value = {
+    project      = var.project_name
+    environment  = var.environment_name
+    state_path   = "{{ state_path }}"
+  }
+}
+

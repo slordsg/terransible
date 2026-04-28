@@ -1,0 +1,10 @@
+- name: Initialize system
+  hosts: managed
+  become: true
+  gather_facts: true
+  vars_files:
+    - group_vars/all.json
+  tasks:
+    - name: Ping
+      ansible.builtin.ping:
+
